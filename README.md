@@ -555,22 +555,48 @@ The following video resources and playlists will be used to build foundational u
 
 ### Videos
 
-- [Video 1](https://youtu.be/VnpRp7ZglfA)
-- [Video 2](https://youtu.be/bPtiN8MS-LE)
-- [Video 3](https://youtu.be/5VHLd9eCZ-w)
+- [Short Intro About RL By Gonkee](https://youtu.be/VnpRp7ZglfA)
+- [Short Intro To RL For Robotics](https://youtu.be/bPtiN8MS-LE)
+- [A Simple Explanation To PPO](https://youtu.be/5VHLd9eCZ-w)
 
 ### Playlists
 
-- [Stanford CS224R — Deep Reinforcement Learning](https://youtube.com/playlist?list=PLMrJAkhIeNNQe1JXNvaFvURxGY4gE9k74)
-- [Playlist 2](https://youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL)
-- [Playlist 3](https://youtube.com/playlist?list=PLOkmXPXHDP22VQmr37DFuJr6k30setQ2w)
-- [Playlist 4](https://youtube.com/playlist?list=PLYExBrZNJeQg)
-- [Playlist 5](https://youtube.com/playlist?list=PLi4fQEV0kn76RSdRrxVwOpiBduSejGhgq)
+- [RL Explanation By Steve Brunton](https://youtube.com/playlist?list=PLMrJAkhIeNNQe1JXNvaFvURxGY4gE9k74)
+- [Stanford CS224R — Deep RL](https://youtube.com/playlist?list=PLoROMvodv4rPwxE0ONYRa_itZFdaKCylL)
+- [Robotic Arm Manipulation Using RL](https://youtube.com/playlist?list=PLOkmXPXHDP22VQmr37DFuJr6k30setQ2w)
+- [RL For Robotics By DigiKey](https://youtube.com/playlist?list=PLYExBrZNJeQg)
+- [Drone Flight Controller Using RL](https://youtube.com/playlist?list=PLi4fQEV0kn76RSdRrxVwOpiBduSejGhgq)
 
 ## 9.3 Documentation
 
+### RL Fundamentals
+- [OpenAI Spinning Up](https://spinningup.openai.com/en/latest/)
+- [Hugging Face Deep RL Course](https://huggingface.co/learn/deep-rl-course/unit0/introduction)
+- [David Silver's RL Lectures](https://www.davidsilver.uk/teaching/)
+- [Gymnasium Documentation](https://gymnasium.farama.org/)
+
+### RL Frameworks
+- [Stable-Baselines3](https://stable-baselines3.readthedocs.io/en/master/)
+- [CleanRL](https://docs.cleanrl.dev/)
+
+### Simulation & Quadrotor Dynamics
 - [MuJoCo Documentation](https://mujoco.readthedocs.io/)
+- [MJLab](https://github.com/mujocolab/mjlab)
+- [RotorPy](https://github.com/ntnu-arl/rotorpy)
+
+### Flight Control & Rotor Failure
+- [PX4 Documentation](https://docs.px4.io/main/en/)
+- [PX4 Control Allocation](https://docs.px4.io/main/en/concept/control_allocation.html)
+
+### Deep Learning & Mathematics
 - [PyTorch Documentation](https://pytorch.org/docs/stable/index.html)
+- [NumPy Documentation](https://numpy.org/doc/)
+- [SciPy Documentation](https://docs.scipy.org/doc/scipy/)
+
+### Experiment Tracking
+- [Weights & Biases](https://docs.wandb.ai/)
+- [TensorBoard](https://www.tensorflow.org/tensorboard)
+- [MLflow](https://mlflow.org/docs/latest/)
 
 **Real-hardware deployment is not part of the project scope.** Sim-to-Real readiness will be explored through simulation-based robustness and generalization experiments.
 
