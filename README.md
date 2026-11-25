@@ -1,4 +1,4 @@
-# SPIN — Reinforcement Learning for Quadrotor Recovery under Rotor Failure
+# SPIN - Reinforcement Learning for Quadrotor Recovery under Rotor Failure
 
 > **What happens when a drone loses a rotor mid-flight?** Rather than attempting to preserve conventional flight behaviour, this project explores how Reinforcement Learning can enable a quadrotor to adapt to a sudden actuator failure and maintain controlled flight.
 
