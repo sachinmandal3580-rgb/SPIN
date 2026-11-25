@@ -1,4 +1,4 @@
-# SPIN - Reinforcement Learning for Quadrotor Recovery under Rotor Failure
+# SPIN — Reinforcement Learning for Quadrotor Recovery under Rotor Failure
 
 > **What happens when a drone loses a rotor mid-flight?** Rather than attempting to preserve conventional flight behaviour, this project explores how Reinforcement Learning can enable a quadrotor to adapt to a sudden actuator failure and maintain controlled flight.
 
@@ -7,6 +7,46 @@ SPIN explores Reinforcement Learning-based fault-tolerant control for quadrotors
 Inspired by research demonstrating that quadrotors can exploit unconventional flight behaviours, including spinning manoeuvres, to remain airborne following rotor failure, this project investigates whether a Reinforcement Learning agent can learn to adapt to these altered dynamics and develop recovery strategies.
 
 The project will focus on physics-based simulation, quadrotor dynamics, control theory, Reinforcement Learning and robust policy training in MuJoCo. Sim-to-Real techniques will also be explored to improve the potential deployability of the learned controller, with evaluation conducted entirely in simulation.
+
+---
+
+## Table of Contents
+
+- [1. Project Overview](#1-project-overview)
+  - [Objective](#objective)
+  - [Core Idea](#core-idea)
+- [2. Motivation & Problem Statement](#2-motivation--problem-statement)
+  - [Why Reinforcement Learning?](#why-reinforcement-learning)
+- [3. Project Objectives](#3-project-objectives)
+- [4. Research & Literature](#4-research--literature)
+  - [4.1 High-Speed Flight of Quadrotor Despite Loss of Single Rotor](#41-high-speed-flight-of-quadrotor-despite-loss-of-single-rotor)
+  - [4.2 A Model-free Deep Reinforcement Learning Approach To Maneuver A Quadrotor Despite Single Rotor Failure](#42-a-model-free-deep-reinforcement-learning-approach-to-maneuver-a-quadrotor-despite-single-rotor-failure)
+  - [4.3 Autonomous Quadrotor Flight Despite Rotor Failure With Onboard Vision Sensors: Frames vs. Events](#43-autonomous-quadrotor-flight-despite-rotor-failure-with-onboard-vision-sensors-frames-vs-events)
+  - [4.4 Upset Recovery Control for Quadrotors Subjected to a Complete Rotor Failure from Large Initial Disturbances](#44-upset-recovery-control-for-quadrotors-subjected-to-a-complete-rotor-failure-from-large-initial-disturbances)
+  - [4.5 Reinforcement Learning-Based Fault-Tolerant Control for Quadrotor UAVs Under Actuator Fault (2024)](#45-reinforcement-learning-based-fault-tolerant-control-for-quadrotor-uavs-under-actuator-fault-2024)
+  - [4.6 Learning-Based Passive Fault-Tolerant Control of a Quadrotor with Rotor Failure (2025)](#46-learning-based-passive-fault-tolerant-control-of-a-quadrotor-with-rotor-failure-2025)
+- [5. Week 1 — Research & Foundations](#5-week-1--research--foundations)
+  - [5.1 Quadrotor Dynamics](#51-quadrotor-dynamics)
+  - [5.2 Rotor Failure & Fault-Tolerant Control](#52-rotor-failure--fault-tolerant-control)
+  - [5.3 Reinforcement Learning Foundations](#53-reinforcement-learning-foundations)
+  - [5.4 MuJoCo & Simulation Foundations](#54-mujoco--simulation-foundations)
+- [6. Mathematical & Control Foundations](#6-mathematical--control-foundations)
+  - [6.1 Newton-Euler Dynamics](#61-newton-euler-dynamics)
+  - [6.2 Coordinate Frames](#62-coordinate-frames)
+  - [6.3 Control Theory](#63-control-theory)
+  - [6.4 Reinforcement Learning](#64-reinforcement-learning)
+- [7. Proposed Methodology](#7-proposed-methodology)
+  - [Stage 1 — Simulation Environment](#stage-1--simulation-environment)
+  - [Stage 2 — Rotor Failure Modelling](#stage-2--rotor-failure-modelling)
+  - [Stage 3 — Reinforcement Learning Formulation](#stage-3--reinforcement-learning-formulation)
+  - [Stage 4 — PPO Training](#stage-4--ppo-training)
+  - [Stage 5 — Evaluation](#stage-5--evaluation)
+  - [Stage 6 — Robustness & Sim-to-Real Techniques](#stage-6--robustness--sim-to-real-techniques)
+- [8. Proposed Experimental Scenarios](#8-proposed-experimental-scenarios)
+- [9. Learning Resources](#9-learning-resources)
+  - [9.1 Research Papers](#91-research-papers)
+  - [9.2 Video Resources](#92-video-resources)
+  - [9.3 Documentation](#93-documentation)
 
 ---
 
@@ -47,7 +87,7 @@ This presents an interesting Reinforcement Learning problem: instead of explicit
 
 SPIN aims to explore this question through Reinforcement Learning-based control, focusing on recovery behaviour, robustness and adaptability under actuator failure.
 
-### Why Reinforcement Learning?
+## Why Reinforcement Learning?
 
 - **Adaptability:** RL policies can learn behaviours suited to altered dynamics rather than relying entirely on predefined recovery manoeuvres.
 - **Nonlinear dynamics:** Quadrotor flight involves nonlinear, coupled translational and rotational dynamics.
@@ -499,7 +539,7 @@ Investigate whether policies trained under varying simulation conditions can gen
 | **Single Rotor Failure** | Introduce complete failure of one rotor during flight. | Investigate recovery behaviour under asymmetric thrust. |
 | **Recovery from Disturbances** | Introduce disturbances or destabilized initial conditions. | Evaluate recovery under challenging conditions. |
 | **Randomized Conditions** | Vary physical parameters across episodes. | Investigate robustness and generalization. |
-| **Robustness Evaluation** | Evaluate across different failure timings, initial states and disturbances. | Analyse the reliability of learned recovery behaviour. |
+| **Robustness Evaluation** | Evaluate across different failure timings, initial states and disturbances. | Analyse the reliability of recovery behaviour. |
 
 ---
 
